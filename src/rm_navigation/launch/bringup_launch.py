@@ -83,9 +83,14 @@ def generate_launch_description():
         default_value='False',
         description='Whether run a SLAM')
 
+    # declare_map_yaml_cmd = DeclareLaunchArgument(
+    #     'map',
+    #     default_value= os.path.join(bringup_dir,'map', 'map_1695900691.yaml'),
+    #     description='Full path to map yaml file to load')
+    
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
-        default_value= os.path.join(bringup_dir,'map', 'map_1695900691.yaml'),
+        default_value= os.path.join(bringup_dir,'map', 'guli.yaml'),
         description='Full path to map yaml file to load')
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
