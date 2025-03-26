@@ -6,7 +6,7 @@ cmds=(  "ros2 launch rm_bringup bringup.launch.py"
 	"ros2 launch fast_lio mapping.launch.py"
 	"ros2 launch imu_complementary_filter complementary_filter.launch.py"
 	"ros2 launch pointcloud_to_laserscan pointcloud_to_laserscan_launch.py"
-	"ros2 launch icp_localization_ros2 bringup.launch.py"
+	"ros2 launch icp_registration icp.launch.py"
 	"ros2 launch rm_navigation bringup_launch.py")
 
 for cmd in "${cmds[@]}";
